@@ -1,6 +1,8 @@
 # Test av Go-Fiber
 Detta är ett litet test av [Go-Fiber](https://docs.gofiber.io/) ramverket. 
-
+### Bra källor för att lära sig Go
+*Listan uppdateras om jag hittar fler*
+- [Go By Example](https://gobyexample.com/) - Snabb och smidig guide för syntax, variabler, iteration etc.
 ## Requirements:
 - [Golang](https://go.dev/) (språket Go)
 - [Go-Fiber](https://docs.gofiber.io/) (ramverket i fråga)
@@ -8,6 +10,7 @@ Detta är ett litet test av [Go-Fiber](https://docs.gofiber.io/) ramverket.
 - [Air](https://github.com/cosmtrek/air) - Ett "Nodemon liknande" program fast gjort för Go.
 
 ## Starta ett Go-Fiber projekt: 
+
 ### 1. Initiera go-projektet
 Ett go projekt startas genom att köra `go mod init example.com/m/v2`
 ```bash
@@ -142,3 +145,4 @@ running...
  │ Prefork ....... Disabled  PID ............. 20188 │
  └───────────────────────────────────────────────────┘
 ```
+
