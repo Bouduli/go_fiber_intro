@@ -3,6 +3,7 @@ Detta är ett litet test av [Go-Fiber](https://docs.gofiber.io/) ramverket.
 ### Bra källor för att lära sig Go
 *Listan uppdateras om jag hittar fler*
 - [Go By Example](https://gobyexample.com/) - Snabb och smidig guide för syntax, variabler, iteration etc.
+- [Tour of Go](https://go.dev/tour/list) - Interaktiv, dock jobbigare version av *Go By Example*
 ## Requirements:
 - [Golang](https://go.dev/) (språket Go)
 - [Go-Fiber](https://docs.gofiber.io/) (ramverket i fråga)
@@ -80,10 +81,10 @@ Raden `import "github.com/gofiber/fiber/v2"` ger tillgång till fiber *modulen (
 **Annars är det rätt bog-standard express.**
 
 
-Servern startas likt `hello.go` genom `go run`:
+Server-applikationen startas precis som `hello.go`, med hjälp av genom `go run`:
 ```bash
 $ go run server.go
- ┌───────────────────────────────────────────────────┐ 
+ ┌───────────────────────────────────────────────────┐
  │                   Fiber v2.52.0                   │
  │               http://127.0.0.1:3000               │
  │       (bound on host 0.0.0.0 and port 3000)       │
@@ -92,13 +93,12 @@ $ go run server.go
  │ Prefork ....... Disabled  PID ............. 11196 │
  └───────────────────────────────────────────────────┘ 
 ```
-**En server har nu startas, och här slutar introt.**
 
 ### 4. Quality of Life saker
 #### 4.1 Air
 Air är ett Nodemon liknande program för att starta-om program när filer ändras. Dock är det mer avancerat. 
 
-**Air är ett extern paket, som laddas ned precis som go-fiber:**
+**Air är ett extern paket, dock installeras detta ned med `go install`:**
 ```bash
 $ go install github.com/cosmtrek/air@latest
 go: downloading github.com/cosmtrek/air v1.49.0
